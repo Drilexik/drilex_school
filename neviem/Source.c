@@ -40,17 +40,23 @@
 //		return 0;
 //}
 
+//int main() {
+//	setlocale(LC_ALL, "cs-CZ");
+//
+//	int i;
+//	printf("======== FROM   XX   TO    1 =========\n");
+//	printf("Zadaj číslo: ");
+//	scanf_s("%i", &i);
+//
+//	while (i >= 1) {
+//		printf("\n%i", i);
+//		i--;
+//	}
+//	return 0;
+//}
+
 int main() {
 	setlocale(LC_ALL, "cs-CZ");
 
-	int i;
-	printf("======== FROM   XX   TO    1 =========\n");
-	printf("Zadaj číslo: ");
-	scanf_s("%i", &i);
-
-	while (i >= 1) {
-		printf("\n%i", i);
-		i--;
-	}
 	return 0;
 }
