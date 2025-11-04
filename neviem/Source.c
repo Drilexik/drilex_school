@@ -56,7 +56,46 @@
 //}
 
 int main() {
-	setlocale(LC_ALL, "cs-CZ");
+    setlocale(LC_ALL, "cs-CZ");
 
-	return 0;
+    printf("Zadaj číslo: ");
+    int a = 0;
+    scanf_s("%i", &a);
+
+    if (a % 5 == 0 && a % 11 == 0) {
+        printf("\nČíslo %i je delitelné číslom 5 a 11", a);
+    }
+    else {
+        printf("\nČíslo %i nie je delitelné číslom 5 a 11", a);
+    }
+
+    printf("\nNapíš rok: ");
+    int b = 0;
+    scanf_s("%i", &b);
+
+    if ((b % 4 == 0 && b % 100 != 0) || (b % 400 == 0)) {
+        printf("Rok je priestupný");
+    }
+    else {
+        printf("Rok nie je priestupný");
+    }
+
+    printf("\n\nZadajte tri uhly trojuholníka");
+
+    int c = 0;
+    int d = 0;
+    int e = 0;
+
+    scanf_s("%i %i %i", &c, &d, &e);
+
+    int plus = c + d + e;
+
+    if (plus == 180 && c > 0 && d > 0 && e > 0) {
+        printf("Trojuholník so stranami %i°, %i°, %i° je možné zostrojiť.", c, d, e);
+    }
+    else {
+        printf("Trojuholník so stranami %i°, %i°, %i° nie je možné zostrojiť.", c, d, e);
+    }
+
+    return 0;
 }
