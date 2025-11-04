@@ -55,7 +55,7 @@
 //	return 0;
 //}
 
-int main() {
+/* int main() {
     setlocale(LC_ALL, "cs-CZ");
 
     printf("Zadaj číslo: ");
@@ -96,6 +96,54 @@ int main() {
     else {
         printf("Trojuholník so stranami %i°, %i°, %i° nie je možné zostrojiť.", c, d, e);
     }
+
+    return 0;
+} */
+
+int main() {
+    setlocale(LC_ALL, "cs-CZ");
+
+    int c;
+    printf("Zadaj číslo pre násobilku: ");
+    scanf_s("%i", &c);
+
+    printf("Malá násobilka pre %i:\n", c);
+    for (int i = 1; i <= 10; i++) {
+        printf("%i × %i = %i\n", c, i, c * i);
+    }
+
+    int d;
+    printf("\nZadajte celé číslo: ");
+    scanf_s("%i", &d);
+
+    int posledna = d % 10;
+
+    int prva = d;
+    while (prva >= 10) {
+        prva = prva / 10;
+    }
+
+    printf("Číslo: %i\n", d);
+    printf("Prvá číslica: %i\n", prva);
+    printf("Posledná číslica: %i\n", posledna);
+
+    int e;
+    printf("\nZadajte celé číslo: ");
+    scanf_s("%i", &e);
+
+    int posledna2 = e % 10;
+
+    int prva2 = e;
+    while (prva2 >= 10) {
+        prva2 = prva2 / 10;
+    }
+
+    int sucet = prva2 + posledna2;
+
+    printf("Číslo: %i\n", e);
+    printf("Prvá číslica: %i\n", prva2);
+    printf("Posledná číslica: %i\n", posledna2);
+    printf("Súčet prvej a poslednej číslice: %i + %i = %i\n", prva2, posledna2, sucet);
 
     return 0;
 }
