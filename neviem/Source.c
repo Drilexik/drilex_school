@@ -100,6 +100,7 @@
     return 0;
 } */
 
+/*
 int main() {
     setlocale(LC_ALL, "cs-CZ");
 
@@ -144,6 +145,28 @@ int main() {
     printf("Prvá číslica: %i\n", prva2);
     printf("Posledná číslica: %i\n", posledna2);
     printf("Súčet prvej a poslednej číslice: %i + %i = %i\n", prva2, posledna2, sucet);
+
+    return 0;
+}
+*/
+
+int main() {
+    setlocale(LC_ALL, "cs-CZ");
+    // -------- ULOHA 1 -----------
+    printf("Uloha #1\n\n");
+
+    int i = 0;
+    while(i <= 5){
+        printf("%i\n", i);
+        i++;
+    }
+    // -------------- ULOHA 2 --------------
+    printf("------------------");
+    printf("\n\nUloha #2\n\n");
+
+    for (i = 0; i <= 5; i = i+1) {
+        printf("%i\n", i);
+    }
 
     return 0;
 }
