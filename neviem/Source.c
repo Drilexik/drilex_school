@@ -267,7 +267,25 @@ int main() {
     setlocale(LC_ALL, "cs-CZ");
     printf("\033[0;35m");
 
+    float a, b, c;
 
+    printf("Zadajte strany trojuholnika a, b, c: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    if (a + b > c && a + c > b && b + c > a) {
+        if (a == b && b == c) {
+            printf("Trojuholnik je rovnostranny\n");
+        }
+        else if (a == b || a == c || b == c) {
+            printf("Trojuholnik je rovnoramenny\n");
+        }
+        else {
+            printf("Trojuholnik je roznostranny\n");
+        }
+    }
+    else {
+        printf("Toto nie je platny trojuholnik\n");
+    }
 
     return 0;
 }
