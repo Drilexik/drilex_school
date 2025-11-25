@@ -1,6 +1,8 @@
 ﻿#include <stdio.h>
 #include <locale.h>
 #include <windows.h>
+setlocale(LC_ALL, "cs-CZ");
+printf("\033[0;35m");
 
 //int main()
 //{
@@ -150,8 +152,10 @@ int main() {
 }
 */
 
-int main() {
+/*int main() {
     setlocale(LC_ALL, "cs-CZ");
+    printf("\033[0;35m");
+
     // -------- ULOHA 1 -----------
     printf("Uloha #1\n\n");
 
@@ -167,6 +171,17 @@ int main() {
     for (i = 0; i <= 5; i = i+1) {
         printf("%i\n", i);
     }
+
+    return 0;
+}
+*/
+
+
+// zmena struktury kódu -> budu přesunuty cmd properties z mainu do defaultu  
+
+int main() {
+
+
 
     return 0;
 }
