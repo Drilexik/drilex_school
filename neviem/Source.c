@@ -1,8 +1,6 @@
 ﻿#include <stdio.h>
 #include <locale.h>
 #include <windows.h>
-setlocale(LC_ALL, "cs-CZ");
-printf("\033[0;35m");
 
 //int main()
 //{
@@ -180,7 +178,33 @@ int main() {
 // zmena struktury kódu -> budu přesunuty cmd properties z mainu do defaultu  
 
 int main() {
+    setlocale(LC_ALL, "cs-CZ");
+    printf("\033[0;35m");
 
+    char word;
+    int upper = 0;
+    int lower = 0;
+
+    printf("Napiste nejaky text a stlacte enter: ");
+
+    while (1) {
+        word = getchar();
+
+        if (word == '\n') {
+            break;
+        }
+
+        if (word >= 'A' && word <= 'Z') {
+            upper++;
+        }
+
+        if (word >= 'a' && word <= 'z') {
+            lower++;
+        }
+    }
+
+    printf("Pocet velkych pismen: %d\n", upper);
+    printf("Pocet malych pismen: %d\n", lower);
 
 
     return 0;
