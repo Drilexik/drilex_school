@@ -177,7 +177,7 @@ int main() {
 
 // zmena struktury kódu -> budu přesunuty cmd properties z mainu do defaultu  
 
-int main() {
+/*int main() {
     setlocale(LC_ALL, "cs-CZ");
     printf("\033[0;35m");
 
@@ -205,6 +205,38 @@ int main() {
 
     printf("Pocet velkych pismen: %d\n", upper);
     printf("Pocet malych pismen: %d\n", lower);
+
+
+    return 0;
+}
+*/
+
+/*int main() {
+    setlocale(LC_ALL, "cs-CZ");
+    printf("\033[0;35m");
+    char word;
+    int a;
+    int i;
+
+    printf("Napíš znak: ");
+    scanf_s(" %c", &word);
+
+    printf("\nKolkokrát chceš napísat znak: ");
+    scanf_s("%i", &a);
+    printf("\n");
+
+        for (i = 1; i <= a; i++) 
+        {
+            printf(" %c", word);
+        }
+
+    return 0;
+}
+*/
+
+int main() {
+    setlocale(LC_ALL, "cs-CZ");
+    printf("\033[0;35m");
 
 
     return 0;
