@@ -234,9 +234,39 @@ int main() {
 }
 */
 
+/*int main() {
+    setlocale(LC_ALL, "cs-CZ");
+    printf("\033[0;35m");
+
+    int num;
+
+    printf("Zadajte cele cislo: ");
+    scanf_s("%i", &num);
+
+    switch (num > 0) {
+    case 1:
+        printf("Cislo je kladne\n");
+        break;
+    case 0:
+        switch (num < 0) {
+        case 1:
+            printf("Cislo je zaporne\n");
+            break;
+        case 0:
+            printf("Cislo je nula\n");
+            break;
+        }
+        break;
+    }
+
+    return 0;
+}
+*/
+
 int main() {
     setlocale(LC_ALL, "cs-CZ");
     printf("\033[0;35m");
+
 
 
     return 0;
