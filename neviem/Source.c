@@ -1,6 +1,8 @@
 ﻿#include <stdio.h>
 #include <locale.h>
 #include <windows.h>
+#include <time.h>
+#include <stdlib.h>
 
 //int main()
 //{
@@ -263,7 +265,7 @@ int main() {
 }
 */
 
-int main() {
+/*int main() {
     setlocale(LC_ALL, "cs-CZ");
     printf("\033[0;35m");
 
@@ -286,6 +288,93 @@ int main() {
     else {
         printf("Toto nie je platny trojuholnik\n");
     }
+
+    return 0;
+}*/
+
+/*int main() {
+    setlocale(LC_ALL, "cs-CZ");
+    printf("\033[0;35m");
+
+    int n, i;
+    int count = 0;
+    float cislo;
+
+    printf(": ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        printf("Zadajte %d. cislo: ", i);
+        scanf("%f", &cislo);
+
+        if (cislo >= 20 && cislo <= 30) {
+            count++;
+        }
+    }
+
+    printf("Pocet cisel v intervale <20, 30> je: %d\n", count);
+
+    return 0;
+}*/
+
+/*int main() {
+    setlocale(LC_ALL, "cs_CZ.UTF-8");
+    printf("\033[0;35m");
+
+    srand(time(0));
+
+    char bankaccid[35];
+    int pass = rand();
+
+    printf("ENTER IBAN (SKXX XXXX XXXX XXXX): ");
+
+    scanf_s("%s", bankaccid, (unsigned int)sizeof(bankaccid));
+
+    Sleep(1500);
+    printf("\n\nLOADING ACCOUNT INFORMATION.");
+    Sleep(350);
+    printf(".");
+    Sleep(500);
+    printf("..");
+    Sleep(800);
+    printf("...");
+    Sleep(650);
+    printf("....\n\n");
+    Sleep(1000);
+    printf("INFORMATION LOADED!\n\n");
+    Sleep(2000);
+
+    printf("CHECKING ACCOUNT INFORMATION ID: \033[1;31m%s\033[0;35m", bankaccid);
+
+    Sleep(1500);
+    printf(".");
+    Sleep(500);
+    printf("..");
+    Sleep(800);
+    printf("...");
+    Sleep(800);
+    printf("....");
+    Sleep(800);
+    printf(".....");
+    Sleep(650);
+    printf("......\n\n");
+    Sleep(1000);
+
+    printf("\n\033[0;32mACCES GRANTED!\033[0;35m\n");
+
+    printf("\nAUTH KEY (PASSCODE): %i\n", pass);
+
+    printf("\033[0m");
+
+    return 0;
+}*/
+
+
+int main() {
+    setlocale(LC_ALL, "cs_CZ.UTF-8");
+    printf("\033[0;35m");
+
+
 
     return 0;
 }
